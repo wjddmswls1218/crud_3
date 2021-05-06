@@ -1,0 +1,26 @@
+extends ./base.pug
+
+block content   
+    section.home    
+        .home__left 
+        .home__center.hc 
+
+            .hc__buttonArea
+                form(action="/create" method="GED")
+                    input(type="submit" value="Write")
+            ul.hc__dataList
+                li 번호
+                li 제목
+                li 작성자
+                li 작성일
+            ul.hc__list
+                li 1
+                li 
+                    form(action="/detail" method="GET")
+                        input(type="hidden" name="id" value="real_db_id")
+                        input(type="submit" value="DUMMY TITLE")
+                li AUTHOR
+                li 2021/05/06
+            
+            
+        .home__right 

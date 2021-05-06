@@ -1,0 +1,24 @@
+extends ./base.pug
+
+block content  
+    form.writeForm(action="#" method="POST")
+        .writeWrapper
+            .writewrapper__quide TITLE
+            .writewrapper__content 
+                input(type="text" name="title")
+
+        .writeWrapper
+            .writewrapper__quide AUTHOR
+            .writewrapper__content 
+                input(type="text" name="author")
+
+        .descWrapper
+            .descWrapper__quide DESC
+            .descWrapper__content
+                textarea(name="desc")
+
+        .buttonArea
+            input(type="submit" value="WRITE")
+
+    form.listForm(action="/" method="GET")
+        input(type="submit" value="LIST")
