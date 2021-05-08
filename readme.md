@@ -4,7 +4,7 @@
     Board System develop width express, mongoDB, pug
 </pre>
 
-- [ ] BOARD LIST("/)
-- [ ] BOARD DETAIL("/detail/id=${id}")
-- [ ] BOARD CREATE("/create")
-- [ ] BOARD EDIT("/edit/id=${id")
+- [x] BOARD LIST("/)
+- [x] BOARD DETAIL("/detail/id=${id}")
+- [x] BOARD CREATE("/create")
+- [x] BOARD EDIT("/edit/id=${id")

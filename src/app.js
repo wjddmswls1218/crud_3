@@ -4,6 +4,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 import bodyParser from "body-parser";
 import boardRouter from "./routers/boardRouter";
+import connect from "../db";
 
 const app = express();
 const PORT = 3000;
@@ -15,7 +16,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "/assets")));
 app.use("/", boardRouter);
+connect();
 
 app.listen(PORT, () => {
-  console.log(`${PORT} Server Start`);
+  console.log(`🐳 ${PORT} Server Start`);
 });

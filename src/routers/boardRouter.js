@@ -4,6 +4,7 @@ import {
   detailController,
   createController,
   editController,
+  createBoardController,
 } from "../controllers/boardController";
 
 const boardRouter = express.Router();
@@ -11,6 +12,7 @@ const boardRouter = express.Router();
 boardRouter.get("/", homeController);
 boardRouter.get("/detail", detailController);
 boardRouter.get("/create", createController);
+boardRouter.post("/createBoard", createBoardController);
 boardRouter.get("/edit", editController);
 
 export default boardRouter;

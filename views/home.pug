@@ -13,14 +13,15 @@ block content
                 li 제목
                 li 작성자
                 li 작성일
-            ul.hc__list
-                li 1
-                li 
-                    form(action="/detail" method="GET")
-                        input(type="hidden" name="id" value="real_db_id")
-                        input(type="submit" value="DUMMY TITLE")
-                li AUTHOR
-                li 2021/05/06
+            each data in BoardList
+                ul.hc__list
+                    li 1
+                    li 
+                        form(action="/detail" method="GET")
+                            input(type="hidden" name="id" value=data._id)
+                            input(type="submit" value=data.title)
+                    li #{data.author}
+                    li #{data.created}
             
             
         .home__right 

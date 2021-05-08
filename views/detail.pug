@@ -5,17 +5,17 @@ block content
         .writeWrapper
             .writewrapper__quide TITLE
             .writewrapper__content 
-                input(type="text" name="title" readonly)
+                input(type="text" name="title" value=data.title breadonly)
 
         .writeWrapper
             .writewrapper__quide AUTHOR
             .writewrapper__content 
-                input(type="text" name="author" readonly)
+                input(type="text" name="author" value=data.author readonly)
 
         .descWrapper
             .descWrapper__quide DESC
             .descWrapper__content
-                textarea(name="desc" readonly)
+                textarea(name="desc"  readonly)=data.description
 
         
 
